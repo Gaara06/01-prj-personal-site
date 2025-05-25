@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Personal Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Simple navigation links to each section -->
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#bio">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section: Your name and a short welcome message -->
+    <section id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <!-- Add your photo below the heading -->
+        <img src="img/me.jpg" alt="A photo of me" width="150">
+        <p>Hello! I'm Guillermo Rabanal, a web development student.</p>
+    </section>
+
+    <!-- Bio Section: A short paragraph about yourself -->
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>
+            I am learning web development and excited to build new projects. 
+            This website will showcase my progress and portfolio.
+        </p>
+    </section>
+
+    <!-- Skills Section: List your skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <!-- Add icons before each skill using Font Awesome -->
+            <li><i class="fa-brands fa-html5" style="color:#e34c26;"></i> HTML</li>
+            <li><i class="fa-brands fa-css3-alt" style="color:#2965f1;"></i> CSS</li>
+            <li><i class="fa-brands fa-js" style="color:#f7df1e;"></i> JavaScript</li>
+            <li><i class="fa-brands fa-react" style="color:#61dafb;"></i> React (basic)</li>
+            <li><i class="fa-solid fa-leaf" style="color:#47a248;"></i> MongoDB (basic)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section: Placeholder for future projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Coming soon!</p>
+    </section>
 </body>
 </html>

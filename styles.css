@@ -1,0 +1,78 @@
+/* Set a basic font for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Navy blue background */
+}
+
+/* Style for each section */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Keeps content centered and not too wide */
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Hero section: center the text */
+#hero {
+    text-align: center;
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+/* Make the hero image round and a little bigger */
+#hero img {
+    width: 200px; /* Make the image bigger */
+    height: 200px; /* Set height to keep it square */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    margin-bottom: 15px; /* Adds space below the image */
+}
+
+/* Section headings */
+h1, h2 {
+    color: #333; /* Darker text for headings */
+}
+
+/* Skills list: add some spacing */
+#skills ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 8px;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #003366; /* Darker navy for nav */
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center the links */
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0 15px; /* Space between links */
+}
+nav a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 16px;
+}
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Add a little space between skill icons and text */
+#skills li i {
+    margin-right: 8px;
+    font-size: 20px; /* Make icons a bit bigger */
+}
