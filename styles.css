@@ -16,6 +16,13 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
 }
 
+/* Make each section "pop" a bit on hover */
+section:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* Stronger shadow on hover */
+    transform: scale(1.01); /* Slightly grow the section */
+    transition: all 0.2s; /* Smooth transition */
+}
+
 /* Hero section: center the text */
 #hero {
     text-align: center;
@@ -75,4 +82,30 @@ nav a:hover {
 #skills li i {
     margin-right: 8px;
     font-size: 20px; /* Make icons a bit bigger */
+}
+
+/* Make skill items do something cool on hover */
+.skill-item {
+    transition: transform 0.2s, background 0.2s;
+    cursor: pointer; /* Show pointer on hover */
+    border-radius: 6px;
+    padding: 6px 0 6px 4px;
+}
+.skill-item:hover {
+    background: #e0f7fa; /* Light blue background on hover */
+    transform: scale(1.07) rotate(-2deg); /* Grow and rotate a bit */
+}
+
+/* Animate the icon a bit on hover */
+.skill-item:hover i {
+    animation: bounce 0.5s;
+}
+
+/* Simple bounce animation for icons */
+@keyframes bounce {
+    0%   { transform: translateY(0);}
+    30%  { transform: translateY(-10px);}
+    50%  { transform: translateY(0);}
+    70%  { transform: translateY(-5px);}
+    100% { transform: translateY(0);}
 }
